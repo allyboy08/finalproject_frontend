@@ -1,0 +1,48 @@
+@media screen and (min-width: 1024px) {
+  .title {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: backgroundChange 10s linear infinite;
+  }
+}
+
+@keyframes backgroundChange {
+  0% {
+    background-image: url("../images/field.jpg");
+  }
+  33% {
+    background-image: url("../images/sa.jpg");
+  }
+  66% {
+    background-image: url("../images/Sydney-Olympics-3.jpg");
+  }
+  99% {
+    background-image: url("../images/field.jpg");
+  }
+}
+@media screen and (max-width: 768px) {
+  .heading {
+    text-align: center;
+
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: black;
+    font-size: 20px;
+    margin-top: 200px;
+  }
+  .title {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: backgroundChange 10s linear infinite;
+  }
+}

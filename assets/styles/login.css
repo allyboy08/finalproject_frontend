@@ -1,0 +1,203 @@
+.modal-content {
+  background-color: rgba(0, 0, 0, 0.4);
+  margin: auto;
+  color: black;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  /* height: 50%; */
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.log-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-left: 85px;
+  margin-right: 85px;
+  padding: 50px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  margin-top: 0px;
+  line-height: 10px;
+  margin-bottom: 10px;
+}
+
+.log-container .log {
+  margin: 10px;
+}
+
+.log-container .log .log-body {
+  padding: 10px;
+  color: whitesmoke;
+  text-align: left;
+}
+
+.log-container .log {
+  height: 200px;
+  width: 300px;
+  object-position: center;
+}
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+button:hover {
+  opacity: 0.7;
+  color: #ffffff;
+}
+button .log .log-body {
+  position: relative;
+  width: 300px;
+  max-width: 400px;
+  display: flex;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  align-content: center;
+  padding: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close1 {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 18px;
+  margin-left: 10px;
+}
+
+.close1:hover,
+.close1:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+#lbtn {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 40%;
+  font-size: 18px;
+}
+#rbtn {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 40%;
+  font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+  .log-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-left: 85px;
+    margin-right: 85px;
+    /* padding: 50px; */
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin-top: 0px;
+    line-height: 10px;
+    margin-bottom: 100px;
+  }
+
+  .log-container .log {
+    margin: 5px;
+  }
+
+  .log-container .log .log-body {
+    padding: 5px;
+    color: whitesmoke;
+    text-align: center;
+    line-height: 15px;
+  }
+
+  .log-container .log {
+    height: 50px;
+    width: 240px;
+    object-position: center;
+  }
+
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 50%;
+    font-size: 18px;
+  }
+  button:hover {
+    opacity: 0.7;
+  }
+  /* button .log .log-body {
+    position: fixed;
+    width: 300px;
+    max-width: 400px;
+    display: flex;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    align-content: center;
+    padding: 10px;
+  } */
+}
