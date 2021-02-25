@@ -1,3 +1,7 @@
+body {
+  background-color: cornflowerblue;
+}
+
 .container {
   position: relative;
   width: 20%;
@@ -37,37 +41,37 @@ img {
   opacity: 1;
 }
 
-.text {
+/* .text {
   background-color: #4caf50;
   color: white;
   font-size: 16px;
   padding: 16px 32px;
-}
+} */
 .head {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  line-height: 100px;
   margin-bottom: 10px;
 }
-.programs {
-  background-color: coral;
-  background-size: cover;
+#drillbtn a {
+  text-decoration: none;
+  color: whitesmoke;
 }
+/* .programs {
+  line-height: 100px;
+} */
 @media screen and (max-width: 768px) {
-  .column {
-    display: flex;
-    flex-wrap: wrap;
-
+  .card {
+    display: grid;
     /* margin: 10px; */
-    padding: 10px;
   }
 
   .container {
     position: sticky;
     width: 40%;
-
+    line-height: 100px;
     padding: 10px;
   }
 
