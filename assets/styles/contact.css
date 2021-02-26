@@ -1,0 +1,59 @@
+/* CONTACT */
+
+/* FORM */
+
+#contact-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.contact-card form label {
+  display: block;
+}
+
+.contact-card form p {
+  margin: 0;
+  width: 100%;
+}
+
+.contact-card form .full {
+  grid-column: 1 / 3;
+}
+
+.contact-card form button,
+.contact-card form input,
+.contact-card form textarea {
+  width: 100%;
+  padding: 1em;
+  border: solid 1px #627edc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.contact-card form textarea {
+  resize: none;
+}
+
+.contact-card form button {
+  background: #627edc;
+  border: 0;
+  color: #e4e4e4;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.contact-card form button:hover,
+.contact-card form button:focus {
+  background: #3952a3;
+  color: #ffffff;
+  outline: 0;
+  transition: background-color 2s ease-out;
+}
+.contact-container {
+  /* margin-left: 150px;
+  margin-right: 150px; */
+  padding: 1em;
+  box-sizing: border-box;
+}

@@ -80,12 +80,22 @@ img {
     width: 190px;
     height: 100%;
   }
+  .middle {
+    opacity: inherit;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 55vw;
+    /* transform: translate(-50%, -50%); */
 
-  .overlay {
+    text-align: center;
+  }
+
+  /* .overlay {
     position: absolute;
     bottom: 0;
     background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    background: rgba(0, 0, 0, 0.5); 
     color: #f1f1f1;
     width: 63%;
     transition: 0.5s ease;
@@ -95,10 +105,11 @@ img {
     padding: 20px;
     text-align: center;
   }
+  
 
   .container:hover .overlay {
     opacity: 1;
-  }
+  } */
   .head {
     display: flex;
     flex-direction: column;
