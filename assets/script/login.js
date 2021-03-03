@@ -1,14 +1,20 @@
 var modal = document.getElementById("myModal");
 var modal1 = document.getElementById("myModal1");
+var modal2 = document.getElementById("myModal2");
 var btn = document.getElementById("myBtn");
 var btn1 = document.getElementById("myBtn1");
+var btn2 = document.getElementById("myBtn2");
 var span = document.getElementsByClassName("close")[0];
 var span1 = document.getElementsByClassName("close1")[0];
+var span2 = document.getElementsByClassName("close2")[0];
 btn.onclick = function () {
   modal.style.display = "block";
 };
 btn1.onclick = function () {
   modal1.style.display = "block";
+};
+btn2.onclick = function () {
+  modal2.style.display = "block";
 };
 span.onclick = function () {
   modal.style.display = "none";
@@ -16,9 +22,14 @@ span.onclick = function () {
 span1.onclick = function () {
   modal1.style.display = "none";
 };
+span2.onclick = function () {
+  modal2.style.display = "none";
+};
+let loggedIn;
 
 function createAccount() {
-  const inputs = document.getElementsByTagName("input");
+  let form = document.getElementById("create-account");
+  const inputs = form.getElementsByTagName("input");
 
   fetch("http://127.0.0.1:5000/add-new/", {
     method: "POST",
@@ -36,7 +47,7 @@ function createAccount() {
     .then((json) => {
       alert("account has been created");
       console.log(json);
-      document.getElementById("create-account").reset();
+      form.reset();
     });
 }
 
@@ -55,12 +66,16 @@ function login() {
       users = json;
       console.log(uname, passw, users);
 
-      let loggedIn = users.filter((user) => {
+      loggedIn = users.filter((user) => {
         return user.uname == uname && user.passw == passw;
       });
-
-      if (loggedIn.length >= 1) {
-        window.location.href = "./profile.html";
-      }
+      alert("logged in success");
+      console.log(json);
+      loginForm.reset();
+      // if (loggedIn.length >= 1) {
+      //   window.location.href = `./profile.html?userID=${loggedIn[0].id}`;
+      // }
     });
 }
+
+// export { login };

@@ -18,7 +18,9 @@
     <!-- Preloader -->
 
     <!-- Navigation Section -->
-
+    <span class="pro">
+      <a href="./profile.html"><i class="fa fa-user"></i></a>
+    </span>
     <nav>
       <div class="navbar" id="nav-links">
         <span class="closebtn" onclick="closeNav()">
@@ -28,7 +30,7 @@
         <div class="nav-links">
           <a href="#home">Home</a>
           <a href="./profile.html">Profile</a>
-          <a href="./contact.html">Contact Us</a>
+          <a href="#contact-form">Contact Us</a>
           <a href="./blog.html">Blog</a>
           <a href="#programs">Programs</a>
         </div>
@@ -129,6 +131,38 @@
             </div>
           </div>
         </div>
+        <div class="log">
+          <div class="log-body">
+            <button id="myBtn2">Admin</button>
+            <div id="myModal2" class="modal">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <span class="close2">&times;</span>
+                </div>
+                <form id="admin" onsubmit="event.preventDefault(); admin()">
+                  <p>
+                    <input
+                      type="text"
+                      name="uname"
+                      id="uname"
+                      placeholder="username"
+                    />
+                  </p>
+                  <p>
+                    <input
+                      type="text"
+                      name="passw"
+                      id="pass"
+                      placeholder="password"
+                    />
+                  </p>
+
+                  <button id="abtn" type="submit">admin</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -136,8 +170,13 @@
       <h1 class="head">Programs</h1>
       <div class="card">
         <div class="container">
-          <img src="./assets/images/goalie.jpg" alt="Avatar" class="image" />
-          <div class="middle">
+          <img
+            src="./assets/images/goalie.jpg"
+            alt="Avatar"
+            class="image"
+            id="gimage"
+          />
+          <div class="middle" id="gmiddle">
             <button id="drillbtn"><a href="./goalie.html">goalie</a></button>
           </div>
         </div>
@@ -163,6 +202,7 @@
         </div>
       </div>
     </section>
+
     <section class="contact">
       <div class="contact-container">
         <div class="contact-card">
@@ -211,7 +251,7 @@
         </div>
       </div>
     </section>
-
+    <script src="./assets/script/admin.js"></script>
     <script src="./assets/script/navigation.js"></script>
     <script src="./assets/script/login.js"></script>
   </body>

@@ -51,7 +51,14 @@ html {
   color: gray;
   margin: 20px;
 }
-
+.pro > a {
+  position: fixed;
+  top: 0%;
+  color: black;
+  font-size: 30px;
+  margin: 20px;
+  display: block;
+}
 .hamburger {
   position: fixed;
   top: 0%;
@@ -77,6 +84,14 @@ html {
     top: 3%;
     right: 5%;
 
+    font-size: 30px;
+    margin: 20px;
+    display: block;
+  }
+  .pro > a {
+    position: fixed;
+    top: 3%;
+    color: black;
     font-size: 30px;
     margin: 20px;
     display: block;

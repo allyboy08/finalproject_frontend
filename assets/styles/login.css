@@ -142,6 +142,33 @@ input[type="password"] {
   width: 40%;
   font-size: 18px;
 }
+.close2 {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 18px;
+  margin-left: 10px;
+}
+
+.close2:hover,
+.close2:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+#abtn {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 40%;
+  font-size: 18px;
+}
 @media screen and (max-width: 768px) {
   .log-container {
     display: flex;

@@ -10,6 +10,7 @@
     />
     <link rel="stylesheet" href="./assets/styles/navigation.css" />
     <link rel="stylesheet" href="./assets/styles/profile.css" />
+    <!-- <link rel="stylesheet" href="./assets/styles/login.css" /> -->
   </head>
   <body>
     <nav>
@@ -19,11 +20,11 @@
         </span>
 
         <div class="nav-links">
-          <a href="#">Home</a>
-          <a href="#">Profile</a>
-          <a href="#">Contact Us</a>
-          <a href="#">Blog</a>
-          <a href="#">Programs</a>
+          <a href="./index.html">Home</a>
+          <a href="./profile.html">Profile</a>
+          <a href="./index.html#contact-form">Contact Us</a>
+          <a href="./blog.html">Blog</a>
+          <a href="./index.html#programs">Programs</a>
         </div>
       </div>
       <span class="hamburger" onclick="openNav()">
@@ -31,11 +32,35 @@
       </span>
     </nav>
     <header class="title" id="home">
-      <h1 class="heading">account name</h1>
+      <!-- <h1 id="profileName" class="heading">Welcome&nbsp;</h1>
 
-      <button id="myBtn">edit account</button>
-      <button id="myBtn1">delete account</button>
+      <div class="btn">
+        <button id="myBtn">edit account</button>
+        <button id="myBtn1">sign-out</button>
+        <div class="log-container">
+          <div class="log">
+            <div class="log-body">
+              <button id="myBtn2">delete account</button>
+              <div id="myModal" class="modal">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <span class="close">&times;</span>
+                  </div>
+                  <form id="delete" onsubmit="event.preventDefault(); remove()">
+                    <p>
+                      
+                    </p>
+                    <button id="dbtn" type="submit">delete</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
     </header>
     <script src="./assets/script/navigation.js"></script>
+    <script src="./assets/script/profile.js"></script>
+    <!-- <script src="./assets/script/login.js"></script> -->
   </body>
 </html>

@@ -50,7 +50,47 @@
 
   /* box-sizing: border-box; */
 }
+body {
+  background-color: forestgreen;
+}
+img {
+  width: 15vw;
+  height: 30vh;
+}
+#cards > p {
+  margin-bottom: 15px;
+}
+#cards2 > p {
+  margin-bottom: 15px;
+}
+#cards3 > p {
+  margin-bottom: 15px;
+}
+#cards {
+  /* position: inherit; */
 
+  padding-top: 20px;
+  margin-left: 150px;
+  /* height: 400px;
+  width: 450px; */
+}
+#cards2 {
+  /* position: inherit; */
+
+  padding-top: 20px;
+  margin-left: 150px;
+  margin-bottom: 20px;
+  /* height: 400px;
+  width: 450px; */
+}
+#cards3 {
+  /* position: inherit; */
+
+  padding-top: 20px;
+  margin-left: 150px;
+  /* height: 400px;
+  width: 450px; */
+}
 .eq {
   background-color: burlywood;
   background-size: cover;
@@ -94,5 +134,34 @@
     background-size: cover;
     margin-top: 100px;
     margin-bottom: 50px;
+  }
+  img {
+    width: 50vw;
+    height: 30vh;
+  }
+  #cards {
+    /* position: inherit; */
+
+    padding-top: 20px;
+    margin-left: 90px;
+    /* height: 400px;
+    width: 450px; */
+  }
+  #cards2 {
+    /* position: inherit; */
+
+    padding-top: 20px;
+    margin-left: 90px;
+    margin-bottom: 0px;
+    /* height: 400px;
+    width: 450px; */
+  }
+  #cards3 {
+    /* position: inherit; */
+
+    padding-top: 20px;
+    margin-left: 90px;
+    /* height: 400px;
+    width: 450px; */
   }
 }
