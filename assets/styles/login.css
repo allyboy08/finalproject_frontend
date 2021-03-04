@@ -51,7 +51,7 @@
   width: 300px;
   object-position: center;
 }
-button {
+.logbtn {
   border: none;
   outline: 0;
   display: inline-block;
@@ -64,11 +64,11 @@ button {
   width: 100%;
   font-size: 18px;
 }
-button:hover {
+.logbtn:hover {
   opacity: 0.7;
   color: #ffffff;
 }
-button .log .log-body {
+.logbtn .log .log-body {
   position: relative;
   width: 300px;
   max-width: 400px;
@@ -203,7 +203,7 @@ input[type="password"] {
     object-position: center;
   }
 
-  button {
+  .logbtn {
     border: none;
     outline: 0;
     display: inline-block;
@@ -215,9 +215,82 @@ input[type="password"] {
     width: 50%;
     font-size: 18px;
   }
-  button:hover {
+  /* button:hover {
     opacity: 0.7;
+  } */
+  #lbtn {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 50%;
+    font-size: 18px;
   }
+  #rbtn {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 50%;
+    font-size: 18px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .log-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-left: 85px;
+    margin-right: 85px;
+    padding: 50px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin-top: 0px;
+    line-height: 10px;
+    margin-bottom: 100px;
+  }
+  .log-container .log {
+    margin: 5px;
+  }
+
+  .log-container .log .log-body {
+    padding: 5px;
+    color: whitesmoke;
+    text-align: center;
+    line-height: 15px;
+  }
+
+  .log-container .log {
+    height: 50px;
+    width: 240px;
+    object-position: center;
+  }
+
+  .logbtn {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 50%;
+    font-size: 18px;
+  }
+  /* button:hover {
+    opacity: 0.7;
+  } */
   #lbtn {
     border: none;
     outline: 0;

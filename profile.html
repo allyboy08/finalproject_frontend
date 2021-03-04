@@ -32,6 +32,28 @@
       </span>
     </nav>
     <header class="title" id="home">
+      <div class="admin-table">
+        <table class="acc-table" id="acc-table">
+          <tr>
+            <th>ID</th>
+            <th>Full Name</th>
+            <th>Username</th>
+            <th>Password</th>
+            <th>Email</th>
+            <th>Delete</th>
+            <th>Edit</th>
+          </tr>
+          <tr>
+            <td>${user.id}</td>
+            <td>${user.fname}</td>
+            <td>${user.uname}</td>
+            <td>${user.passw}</td>
+            <td>${user.email}</td>
+            <td>delete</td>
+            <td>edit</td>
+          </tr>
+        </table>
+      </div>
       <!-- <h1 id="profileName" class="heading">Welcome&nbsp;</h1>
 
       <div class="btn">
@@ -47,9 +69,7 @@
                     <span class="close">&times;</span>
                   </div>
                   <form id="delete" onsubmit="event.preventDefault(); remove()">
-                    <p>
-                      
-                    </p>
+                    <p></p>
                     <button id="dbtn" type="submit">delete</button>
                   </form>
                 </div>
@@ -60,7 +80,8 @@
       </div> -->
     </header>
     <script src="./assets/script/navigation.js"></script>
-    <script src="./assets/script/profile.js"></script>
+    <!-- <script src="./assets/script/profile.js"></script> -->
+    <script src="./assets/script/admin.js"></script>
     <!-- <script src="./assets/script/login.js"></script> -->
   </body>
 </html>
