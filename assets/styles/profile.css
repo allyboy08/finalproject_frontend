@@ -1,4 +1,4 @@
-.heading {
+/* .heading {
   text-align: center;
 
   text-transform: uppercase;
@@ -6,15 +6,36 @@
   color: black;
   font-size: 20px;
   margin-top: 200px;
-}
+} */
 .title {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+}
+.admin-table {
+  width: 100%;
+  display: grid;
+}
+table,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.acc-table th {
+  background-color: black;
+  color: aliceblue;
+}
+td {
+  background-color: transparent;
+}
+.inv {
+  background-color: darkgoldenrod;
+  width: 100%;
 }
 
-.btn {
+/* .btn {
   display: flex;
   flex-direction: row;
 }
@@ -22,7 +43,6 @@ body {
   background-color: forestgreen;
 }
 
-/*modal*/
 .modal-content {
   background-color: rgba(0, 0, 0, 0.4);
   margin: auto;
@@ -30,7 +50,7 @@ body {
   padding: 20px;
   border: 1px solid #888;
   width: 50%;
-  /* height: 50%; */
+  height: 50%;
 }
 .modal {
   display: none;
@@ -51,7 +71,7 @@ body {
 
   margin-left: 85px;
   margin-right: 85px;
-  /* padding: 50px; */
+  padding: 50px;
   align-content: center;
   justify-content: center;
   align-items: center;
@@ -144,7 +164,7 @@ input[type="text"] {
 @media screen and (max-width: 768px) {
   .btn {
     display: flex;
-    /* flex-direction: column; */
+
     margin-top: 50px;
     flex-wrap: wrap;
     justify-content: center;
@@ -174,4 +194,6 @@ input[type="text"] {
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
+} */
+@media screen and (max-width: 768px) {
 }

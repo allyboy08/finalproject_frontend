@@ -9,7 +9,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/styles/navigation.css" />
-    <link rel="stylesheet" href="./assets/styles/profile.css" />
+    <link rel="stylesheet" href="./assets/styles/admin.css" />
     <!-- <link rel="stylesheet" href="./assets/styles/login.css" /> -->
   </head>
   <body>
@@ -34,16 +34,19 @@
     <header class="title" id="home">
       <div class="admin-table">
         <table class="acc-table" id="acc-table">
-          <tr>
-            <th>ID</th>
-            <th>Full Name</th>
-            <th>Username</th>
-            <th>Password</th>
-            <th>Email</th>
-            <th>Delete</th>
-            <th>Edit</th>
-          </tr>
-          <tr>
+          <thead>
+            <tr class="heads">
+              <th>ID</th>
+              <th>Full Name</th>
+              <th>Username</th>
+              <th>Password</th>
+              <th>Email</th>
+              <th>Delete</th>
+              <th>Edit</th>
+            </tr>
+          </thead>
+
+          <!-- <tr>
             <td>${user.id}</td>
             <td>${user.fname}</td>
             <td>${user.uname}</td>
@@ -51,33 +54,9 @@
             <td>${user.email}</td>
             <td>delete</td>
             <td>edit</td>
-          </tr>
+          </tr> -->
         </table>
       </div>
-      <!-- <h1 id="profileName" class="heading">Welcome&nbsp;</h1>
-
-      <div class="btn">
-        <button id="myBtn">edit account</button>
-        <button id="myBtn1">sign-out</button>
-        <div class="log-container">
-          <div class="log">
-            <div class="log-body">
-              <button id="myBtn2">delete account</button>
-              <div id="myModal" class="modal">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <span class="close">&times;</span>
-                  </div>
-                  <form id="delete" onsubmit="event.preventDefault(); remove()">
-                    <p></p>
-                    <button id="dbtn" type="submit">delete</button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
     </header>
     <script src="./assets/script/navigation.js"></script>
     <!-- <script src="./assets/script/profile.js"></script> -->
