@@ -31,7 +31,7 @@ function createAccount() {
   let form = document.getElementById("create-account");
   const inputs = form.getElementsByTagName("input");
 
-  fetch("http://127.0.0.1:5000/add-new/", {
+  fetch("https://pacific-ocean-71803.herokuapp.com/add-new/", {
     method: "POST",
     body: JSON.stringify({
       fname: inputs[0].value,
@@ -59,7 +59,7 @@ function login() {
   let passw = inputs[1].value;
 
   let users;
-  fetch("http://127.0.0.1:5000/show-accounts/")
+  fetch("https://pacific-ocean-71803.herokuapp.com/show-accounts/")
     .then((response) => response.json())
     .then((json) => {
       console.log(json);
@@ -72,9 +72,11 @@ function login() {
       alert("logged in success");
       console.log(json);
       loginForm.reset();
-      // if (loggedIn.length >= 1) {
-      //   window.location.href = `./profile.html?userID=${loggedIn[0].id}`;
-      // }
+      if (loggedIn.length >= 1) {
+        localStorage.setItem("user", JSON.stringify(loggedIn[0]));
+        window.location.href = `./blog.html`;
+        console.log("worked");
+      }
     });
 }
 
