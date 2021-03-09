@@ -93,10 +93,10 @@ html {
     top: 0%;
     /* color: black; */
     font-size: 30px;
-    margin: 20px;
+    margin: 15px;
     display: block;
-    width: 10vw;
-    height: 20vh;
+    width: 20vw;
+    height: 10vh;
   }
   .hamburger {
     position: fixed;
@@ -131,6 +131,16 @@ html {
     font-size: 30px;
     margin: 20px;
     display: block;
+  }
+  .logo {
+    position: fixed;
+    top: 0%;
+    /* color: black; */
+    font-size: 30px;
+    margin: 20px;
+    display: block;
+    width: 10vw;
+    height: 10vh;
   }
   .nav-links {
     position: relative;

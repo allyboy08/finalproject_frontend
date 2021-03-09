@@ -64,11 +64,28 @@
   width: 100%;
   font-size: 18px;
 }
+.outbtn {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+
+  text-align: center;
+  cursor: pointer;
+  width: 27%;
+  font-size: 18px;
+}
 .logbtn:hover {
   opacity: 0.7;
   color: #ffffff;
 }
-.logbtn .log .log-body {
+.outbtn:hover {
+  opacity: 0.7;
+  color: #ffffff;
+}
+.logbtn .log .log-body .outbtn {
   position: relative;
   width: 300px;
   max-width: 400px;
@@ -169,7 +186,7 @@ input[type="password"] {
   width: 40%;
   font-size: 18px;
 }
-#obtn {
+/* #obtn {
   border: none;
   outline: 0;
   display: inline-block;
@@ -180,12 +197,12 @@ input[type="password"] {
   cursor: pointer;
   width: 40%;
   font-size: 18px;
-}
+} */
 @media screen and (max-width: 768px) {
   .log-container {
     display: flex;
     flex-wrap: wrap;
-
+    flex-direction: column;
     margin-left: 85px;
     margin-right: 85px;
     /* padding: 50px; */
@@ -227,6 +244,18 @@ input[type="password"] {
     width: 50%;
     font-size: 18px;
   }
+  .outbtn {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 45%;
+    font-size: 18px;
+  }
   /* button:hover {
     opacity: 0.7;
   } */
@@ -266,7 +295,7 @@ input[type="password"] {
     width: 50%;
     font-size: 18px;
   }
-  #obtn {
+  /* #obtn {
     border: none;
     outline: 0;
     display: inline-block;
@@ -275,9 +304,9 @@ input[type="password"] {
     background-color: #000;
     text-align: center;
     cursor: pointer;
-    width: 45%;
+    width: 50%;
     font-size: 18px;
-  }
+  } */
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .log-container {
@@ -349,6 +378,18 @@ input[type="password"] {
     text-align: center;
     cursor: pointer;
     width: 50%;
+    font-size: 18px;
+  }
+  .outbtn {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 23%;
     font-size: 18px;
   }
 }
