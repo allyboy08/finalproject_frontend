@@ -1,5 +1,5 @@
 body {
-  background-color: forestgreen;
+  background-color: black;
 }
 
 .container {
@@ -51,6 +51,7 @@ img {
   align-items: center;
   line-height: 100px;
   margin-bottom: 10px;
+  color: white;
 }
 #drillbtn a {
   /* text-decoration: none;

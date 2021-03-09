@@ -47,7 +47,7 @@
 }
 
 .log-container .log {
-  height: 200px;
+  /* height: 200px; */
   width: 300px;
   object-position: center;
 }
@@ -169,6 +169,18 @@ input[type="password"] {
   width: 40%;
   font-size: 18px;
 }
+#obtn {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 40%;
+  font-size: 18px;
+}
 @media screen and (max-width: 768px) {
   .log-container {
     display: flex;
@@ -240,6 +252,30 @@ input[type="password"] {
     text-align: center;
     cursor: pointer;
     width: 50%;
+    font-size: 18px;
+  }
+  #abtn {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 50%;
+    font-size: 18px;
+  }
+  #obtn {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 45%;
     font-size: 18px;
   }
 }

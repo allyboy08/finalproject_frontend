@@ -71,13 +71,23 @@ function login() {
       });
       alert("logged in success");
       console.log(json);
-      loginForm.reset();
+      // loginForm.reset();
       if (loggedIn.length >= 1) {
-        localStorage.setItem("user", JSON.stringify(loggedIn[0]));
+        // let un = document.getElementById("uname").value;
+        // let pas = document.getElementById("passw").value;
+        localStorage.setItem("user-logged", JSON.stringify(uname, passw));
         window.location.href = `./blog.html`;
         console.log("worked");
       }
     });
 }
-
+function out() {
+  // if (loggedIn.length >= 1) {
+  // let un = document.getElementById("uname").value;
+  // let pas = document.getElementById("passw").value;
+  localStorage.removeItem("user-logged");
+  alert("logged out success");
+  window.location.href = `./contact.html`;
+  // }
+}
 // export { login };

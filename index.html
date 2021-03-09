@@ -21,6 +21,7 @@
     <!-- <span class="pro">
       <a href="./profile.html"><i class="fa fa-user"></i></a>
     </span> -->
+    <img src="./assets/images/logo1.png" alt="Logo" class="logo" />
     <nav>
       <div class="navbar" id="nav-links">
         <span class="closebtn" onclick="closeNav()">
@@ -65,7 +66,7 @@
                     <input
                       type="text"
                       name="passw"
-                      id="pass"
+                      id="passw"
                       placeholder="password"
                     />
                   </p>
@@ -166,38 +167,8 @@
             </div>
           </div>
         </div>
-        <div class="log">
-          <div class="log-body">
-            <button class="signbtn" id="myBtn">sign-out</button>
-            <div id="myModal3" class="modal">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <span class="close3">&times;</span>
-                </div>
-                <form id="login" onsubmit="event.preventDefault(); signout()">
-                  <p>
-                    <input
-                      type="text"
-                      name="uname"
-                      id="uname"
-                      placeholder="username"
-                    />
-                  </p>
-                  <p>
-                    <input
-                      type="text"
-                      name="passw"
-                      id="pass"
-                      placeholder="password"
-                    />
-                  </p>
 
-                  <button class="logbtn" id="lbtn" type="submit">Login</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
+        <button class="outbtn" id="obtn" onclick="out()">sign-out</button>
       </div>
     </header>
 

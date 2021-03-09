@@ -6,7 +6,7 @@ function admin() {
   let passw = inputs[1].value;
 
   let users;
-  fetch("http://127.0.0.1:5000/show-admin/")
+  fetch(`https://pacific-ocean-71803.herokuapp.com/show-admin/`)
     .then((response) => response.json())
     .then((json) => {
       console.log(json);
@@ -26,7 +26,7 @@ function admin() {
 }
 
 function getAcc() {
-  fetch(`http://127.0.0.1:5000/show-accounts/`)
+  fetch(`https://pacific-ocean-71803.herokuapp.com/show-accounts/`)
     .then((response) => response.json())
     .then((json) => {
       console.log(json);
@@ -35,7 +35,7 @@ function getAcc() {
 }
 
 function showtr(user) {
-  const tableacc = `<tr data-id=${user.id}>
+  const tableacc = `<tr class="datat" data-id=${user.id}>
   
         <td>${user.id}</td>
         <td><input class="inv" name="fname" type='text' value="${user.fname}"></td>
@@ -43,9 +43,10 @@ function showtr(user) {
         <td><input class="inv" name="passw" type='text' value="${user.passw}"></td>
         <td><input class="inv" name="email" type='text' value="${user.email}"></td>
         <td><button class="tdbtn" onclick="deleteAcc(${user.id})">delete</button></td>
+        
         <td><button class="tebtn" onclick="editAcc(${user.id})">edit</button></td>
       </tr>`;
-  let list = document.getElementById("acc-table");
+  let list = document.getElementById("acc-table-body");
   console.log("hello");
   list.innerHTML += tableacc;
 }
@@ -53,7 +54,9 @@ getAcc();
 
 function deleteAcc(id) {
   if (confirm("are you sure you want to delete your account")) {
-    fetch(`http://127.0.0.1:5000/delete-account/${id}/`, { method: "DELETE" });
+    fetch(`https://pacific-ocean-71803.herokuapp.com/delete-account/${id}/`, {
+      method: "DELETE",
+    });
     console.log(id);
   } else {
     alert("cancel");
@@ -73,7 +76,7 @@ function editAcc(id) {
     email: inputs[3].value,
   };
 
-  fetch(`http://127.0.0.1:5000/edit-account/${id}/`, {
+  fetch(`https://pacific-ocean-71803.herokuapp.com/edit-account/${id}/`, {
     method: "PUT",
     body: JSON.stringify(user),
     headers: {
