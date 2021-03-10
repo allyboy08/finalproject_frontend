@@ -7,6 +7,14 @@
 html {
   scroll-behavior: smooth;
 }
+.back > a {
+  position: fixed;
+  top: 0%;
+  color: white;
+  font-size: 40px;
+  margin: 15px;
+  display: block;
+}
 
 .navbar {
   height: 0;
@@ -66,10 +74,12 @@ html {
   top: 0%;
   /* color: black; */
   font-size: 30px;
-  margin: 20px;
+  /* margin: 20px; */
+  margin-top: 10px;
+  margin-bottom: 20px;
   display: block;
   width: 10vw;
-  height: 20vh;
+  height: 15vh;
 }
 @media screen and (max-width: 768px) {
   .nav-links {

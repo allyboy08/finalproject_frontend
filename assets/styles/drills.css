@@ -8,14 +8,14 @@
   /* background-color: cornflowerblue; */
 }
 
-.back > a {
+/* .back > a {
   position: fixed;
   top: 0%;
   color: white;
   font-size: 40px;
   margin: 15px;
   display: block;
-}
+} */
 h2 {
   color: firebrick;
 }
