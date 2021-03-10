@@ -51,19 +51,12 @@ html {
   color: gray;
   margin: 20px;
 }
-.pro > a {
-  position: fixed;
-  top: 0%;
-  color: black;
-  font-size: 30px;
-  margin: 20px;
-  display: block;
-}
+
 .hamburger {
   position: fixed;
   top: 0%;
   right: 0%;
-  color: grey;
+  color: white;
   font-size: 30px;
   margin: 20px;
   display: block;

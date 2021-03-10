@@ -59,7 +59,7 @@ function login() {
   let passw = inputs[1].value;
 
   let users;
-  fetch("https://pacific-ocean-71803.herokuapp.com/show-accounts/")
+  fetch(`https://pacific-ocean-71803.herokuapp.com/show-accounts/`)
     .then((response) => response.json())
     .then((json) => {
       console.log(json);
@@ -76,7 +76,7 @@ function login() {
         // let un = document.getElementById("uname").value;
         // let pas = document.getElementById("passw").value;
         localStorage.setItem("user-logged", JSON.stringify(uname, passw));
-        window.location.href = `./blog.html`;
+        window.location.href = `./index.html`;
         console.log("worked");
       }
     });
@@ -87,7 +87,7 @@ function out() {
   // let pas = document.getElementById("passw").value;
   localStorage.removeItem("user-logged");
   alert("logged out success");
-  window.location.href = `./contact.html`;
+  window.location.href = `./index.html`;
   // }
 }
 // export { login };
