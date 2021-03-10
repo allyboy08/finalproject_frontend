@@ -214,33 +214,33 @@
         <div class="contact-card">
           <h1 class="head">Contact Form</h1>
 
-          <form id="contact-form" action="contact.html" method="POST">
+          <form
+            id="contact-form"
+            name="contact"
+            method="POST"
+            data-netlify="true"
+          >
             <p>
               Name
-              <input type="text" name="fname" id="fname" placeholder="name" />
-            </p>
-            <!-- <p>
-              Address
               <input
                 type="text"
-                name="address"
-                id="address"
-                placeholder="address"
+                name="fname"
+                id="fname"
+                placeholder="name"
+                required
               />
-            </p> -->
+            </p>
+
             <p>
               Email
-              <input type="text" name="email" id="email" placeholder="email" />
-            </p>
-            <!-- <p>
-              Phone-Number
               <input
                 type="text"
-                name="phone"
-                id="phone"
-                placeholder="phone number"
+                name="email"
+                id="email"
+                placeholder="email"
+                required
               />
-            </p> -->
+            </p>
 
             <p class="full">
               Message
