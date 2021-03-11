@@ -81,6 +81,23 @@ html {
   width: 10vw;
   height: 15vh;
 }
+.outbtn:hover {
+  opacity: 0.7;
+  color: #ffffff;
+}
+.outbtn {
+  border: none;
+  position: relative;
+  top: 25%;
+  left: 37%;
+  width: 26%;
+  display: grid;
+  list-style-type: none;
+  color: darkolivegreen;
+  text-align: center;
+  font-size: 30px;
+  background-color: transparent;
+}
 footer {
   color: white;
   text-align: center;
@@ -119,6 +136,19 @@ footer {
     margin: 15px;
     display: block;
   }
+  .outbtn {
+    border: none;
+    position: relative;
+    top: 25%;
+    left: 37%;
+    width: 26%;
+    display: grid;
+    list-style-type: none;
+    color: darkolivegreen;
+    text-align: center;
+    font-size: 20px;
+    background-color: transparent;
+  }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .hamburger {
@@ -148,5 +178,18 @@ footer {
     list-style-type: none;
     margin-top: 30px;
     text-align: center;
+  }
+  .outbtn {
+    border: none;
+    position: relative;
+    top: 25%;
+    left: 37%;
+    width: 26%;
+    display: grid;
+    list-style-type: none;
+    color: darkolivegreen;
+    text-align: center;
+    font-size: 25px;
+    background-color: transparent;
   }
 }

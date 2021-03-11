@@ -66,16 +66,16 @@
 }
 .outbtn {
   border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-
+  position: relative;
+  top: 25%;
+  left: 37%;
+  width: 26%;
+  display: grid;
+  list-style-type: none;
+  color: darkolivegreen;
   text-align: center;
-  cursor: pointer;
-  width: 27%;
-  font-size: 18px;
+  font-size: 30px;
+  background-color: transparent;
 }
 .logbtn:hover {
   opacity: 0.7;
@@ -186,18 +186,7 @@ input[type="password"] {
   width: 40%;
   font-size: 18px;
 }
-/* #obtn {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 40%;
-  font-size: 18px;
-} */
+
 @media screen and (max-width: 768px) {
   .log-container {
     display: flex;
@@ -246,19 +235,18 @@ input[type="password"] {
   }
   .outbtn {
     border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
+    position: relative;
+    top: 25%;
+    left: 37%;
+    width: 26%;
+    display: grid;
+    list-style-type: none;
+    color: darkolivegreen;
     text-align: center;
-    cursor: pointer;
-    width: 45%;
-    font-size: 18px;
+    font-size: 20px;
+    background-color: transparent;
   }
-  /* button:hover {
-    opacity: 0.7;
-  } */
+
   #lbtn {
     border: none;
     outline: 0;
@@ -295,18 +283,6 @@ input[type="password"] {
     width: 50%;
     font-size: 18px;
   }
-  /* #obtn {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 50%;
-    font-size: 18px;
-  } */
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .log-container {
@@ -382,14 +358,15 @@ input[type="password"] {
   }
   .outbtn {
     border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
+    position: relative;
+    top: 25%;
+    left: 37%;
+    width: 26%;
+    display: grid;
+    list-style-type: none;
+    color: darkolivegreen;
     text-align: center;
-    cursor: pointer;
-    width: 23%;
-    font-size: 18px;
+    font-size: 25px;
+    background-color: transparent;
   }
 }
