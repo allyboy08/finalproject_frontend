@@ -9,6 +9,16 @@
     align-items: center;
     animation: backgroundChange 10s linear infinite;
   }
+  .heading {
+    text-align: center;
+
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: black;
+    font-size: 40px;
+    /* margin-top: 200px; */
+    text-shadow: 2px 2px green;
+  }
 }
 
 @keyframes backgroundChange {
@@ -34,6 +44,7 @@
     color: black;
     font-size: 20px;
     margin-top: 200px;
+    text-shadow: 2px 2px green;
   }
   .title {
     height: 100vh;
@@ -60,5 +71,6 @@
     color: black;
     font-size: 20px;
     margin-top: 100px;
+    text-shadow: 2px 2px green;
   }
 }

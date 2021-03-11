@@ -81,6 +81,15 @@ html {
   width: 10vw;
   height: 15vh;
 }
+footer {
+  color: white;
+  text-align: center;
+  background-color: rgb(63, 63, 63);
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @media screen and (max-width: 768px) {
   .nav-links {
     position: relative;
