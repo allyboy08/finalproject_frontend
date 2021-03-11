@@ -72,9 +72,9 @@ html {
 .logo {
   position: fixed;
   top: 0%;
-  /* color: black; */
+
   font-size: 30px;
-  /* margin: 20px; */
+
   margin-top: 10px;
   margin-bottom: 20px;
   display: block;
@@ -103,9 +103,10 @@ footer {
   .logo {
     position: fixed;
     top: 0%;
-    /* color: black; */
+
     font-size: 30px;
-    margin: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     display: block;
     width: 20vw;
     height: 10vh;
@@ -118,24 +119,8 @@ footer {
     margin: 15px;
     display: block;
   }
-  /* .pro > a {
-    position: fixed;
-    top: 3%;
-    color: black;
-    font-size: 30px;
-    margin: 20px;
-    display: block;
-  } */
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-  .pro > a {
-    position: fixed;
-    top: 0%;
-    color: black;
-    font-size: 30px;
-    margin: 20px;
-    display: block;
-  }
   .hamburger {
     position: fixed;
     top: 0%;
@@ -147,9 +132,10 @@ footer {
   .logo {
     position: fixed;
     top: 0%;
-    /* color: black; */
+
     font-size: 30px;
-    margin: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     display: block;
     width: 10vw;
     height: 10vh;
