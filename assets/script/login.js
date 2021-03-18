@@ -34,7 +34,7 @@ function createAccount() {
   fetch("https://pacific-ocean-71803.herokuapp.com/add-new/", {
     method: "POST",
     body: JSON.stringify({
-      name: inputs[0].value,
+      fname: inputs[0].value,
       uname: inputs[1].value,
       passw: inputs[2].value,
       email: inputs[3].value,
