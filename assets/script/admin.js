@@ -38,7 +38,7 @@ function showtr(user) {
   const tableacc = `<tr class="datat" data-id=${user.id}>
   
         <td>${user.id}</td>
-        <td><input class="inv" name="fname" type='text' value="${user.name}"></td>
+        <td><input class="inv" name="fname" type='text' value="${user.fname}"></td>
         <td><input class="inv" name="uname" type='text' value="${user.uname}"></td>
         <td><input class="inv" name="passw" type='text' value="${user.passw}"></td>
         <td><input class="inv" name="email" type='text' value="${user.email}"></td>
