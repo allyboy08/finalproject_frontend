@@ -52,11 +52,13 @@ function showtr(user) {
 }
 getAcc();
 
-function deleteAcc(id) {
+async function deleteAcc(id) {
   if (confirm("are you sure you want to delete your account")) {
-    fetch(`https://pacific-ocean-71803.herokuapp.com/delete-account/${id}/`, {
+    await fetch(`https://pacific-ocean-71803.herokuapp.com/delete-account/${id}/`, {
       method: "DELETE",
     });
+    location.reload();
+
     console.log(id);
   } else {
     alert("cancel");
