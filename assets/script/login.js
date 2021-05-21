@@ -52,6 +52,7 @@ function createAccount() {
     .then((json) => {
       alert("account has been created");
       console.log(json);
+      window.location.href = `./index.html`;
       form.reset();
     });
 }
@@ -67,20 +68,16 @@ function login() {
   fetch(`https://pacific-ocean-71803.herokuapp.com/show-accounts/`)
     .then((response) => response.json())
     .then((json) => {
-      console.log(json);
       users = json;
-      console.log(uname, passw, users);
 
       loggedIn = users.filter((user) => {
         return user.uname == uname && user.passw == passw;
       });
       alert("logged in success");
-      console.log(json);
 
       if (loggedIn.length >= 1) {
         localStorage.setItem("user-logged", JSON.stringify(uname, passw));
         window.location.href = `./index.html`;
-        console.log("worked");
       }
     });
 }
@@ -89,3 +86,21 @@ function out() {
   alert("logged out success");
   window.location.href = `./index.html`;
 }
+
+function logged(){
+
+  let user_data = JSON.parse(localStorage.getItem("user-logged"));
+  console.log(user_data)
+  let info = `
+  <div class ="user_info">
+     <h2 id="uname"> Welcome ${user_data} </h2>
+       
+  </div>
+    
+   `;
+  console.log("Hello ", user_data);
+  let body = document.getElementById("user-data");
+  body.innerHTML += info;
+}
+logged();
+
