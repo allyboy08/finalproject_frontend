@@ -52,7 +52,7 @@ function createAccount() {
     .then((json) => {
       alert("account has been created");
       console.log(json);
-      window.location.href = `./index.html`;
+      window.location.href = `./home.html`;
       form.reset();
     });
 }
@@ -77,7 +77,7 @@ function login() {
 
       if (loggedIn.length >= 1) {
         localStorage.setItem("user-logged", JSON.stringify(uname, passw));
-        window.location.href = `./index.html`;
+        window.location.href = `./home.html`;
       }
     });
 }

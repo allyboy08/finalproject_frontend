@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/styles/navigation.css" />
+    <link rel="stylesheet" href="./assets/styles/landing.css" />
+    <link rel="stylesheet" href="./assets/styles/plans.css" />
+    <link rel="stylesheet" href="./assets/styles/login.css" />
+    <link rel="stylesheet" href="./assets/styles/contact.css" />
+  </head>
+  <body>
+    <!-- Preloader -->
+    
+    <!-- Navigation Section -->
+
+    <img src="./assets/images/logo3.png" alt="Logo" class="logo" />
+    <nav>
+      <div class="navbar" id="nav-links">
+        <span class="closebtn" onclick="closeNav()">
+          <i class="fa fa-times"></i>
+        </span>
+        
+        
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#contact-form">Contact Us</a>
+          <a href="./blog.html">Blog</a>
+          <a href="#programs">Programs</a>
+          <button class="outbtn" id="obtn" onclick="out()">Sign-Out</button>
+        </div>
+      </div>
+    </nav>
+    <span class="hamburger" onclick="openNav()">
+      <i class="fa fa-bars"></i>
+    </span>
+
+    <!-- landing -->
+    <header class="title" id="home">
+      <h1 class="heading">FIELD HOCKEY TRAINING</h1>
+      <!-- <div class="log-container">
+        <div class="log">
+          <div class="log-body">
+            <button class="logbtn" id="myBtn">Login</button>
+            <div id="myModal" class="modal">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <span class="close">&times;</span>
+                </div>
+                <form id="login" onsubmit="event.preventDefault(); login()">
+                  <p>
+                    <input
+                      type="text"
+                      name="uname"
+                      id="uname"
+                      placeholder="username"
+                    />
+                  </p>
+                  <p>
+                    <input
+                      type="password"
+                      name="passw"
+                      id="passw"
+                      placeholder="password"
+                    />
+                  </p>
+
+                  <button class="logbtn" id="lbtn" type="submit" onclick="logged()">Login</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="log">
+          <div class="log-body">
+            <button class="logbtn" id="myBtn1">Register</button>
+            <div id="myModal1" class="modal">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <span class="close1">&times;</span>
+                </div>
+                <form
+                  id="create-account"
+                  onsubmit="event.preventDefault(); createAccount()"
+                >
+                  <p>
+                    <input
+                      type="text"
+                      name="fname"
+                      id="fname"
+                      placeholder="Full Name"
+                      required
+                    />
+                  </p>
+                  <p>
+                    <input
+                      type="text"
+                      name="uname"
+                      id="uname"
+                      placeholder="Username"
+                      required
+                    />
+                  </p>
+                  <p>
+                    <input
+                      type="password"
+                      name="passw"
+                      id="pass"
+                      placeholder="Password"
+                      required
+                    />
+                  </p>
+                  <p>
+                    <input
+                      type="text"
+                      name="email"
+                      id="email"
+                      placeholder="Email"
+                      required
+                    />
+                  </p>
+
+                  <button class="logbtn" id="rbtn" type="submit">
+                    Register
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="log">
+          <div class="log-body">
+            <button class="logbtn" id="myBtn2">Admin</button>
+            <div id="myModal2" class="modal">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <span class="close2">&times;</span>
+                </div>
+                <form id="admin" onsubmit="event.preventDefault(); admin()">
+                  <p>
+                    <input
+                      type="text"
+                      name="uname"
+                      id="uname"
+                      placeholder="username"
+                    />
+                  </p>
+                  <p>
+                    <input
+                      type="password"
+                      name="passw"
+                      id="pass"
+                      placeholder="password"
+                    />
+                  </p>
+
+                  <button class="logbtn" id="abtn" type="submit">admin</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+      </div> -->
+      <div class="user-data" id="user-data"></div>
+    </header>
+
+    <section class="programs" id="programs">
+      <h1 class="head">Programs</h1>
+      <div class="card">
+        <div class="container">
+          <img
+            src="./assets/images/goalie.jpg"
+            alt="Avatar"
+            class="image"
+            id="gimage"
+          />
+          <div class="middle" id="gmiddle">
+            <button id="drillbtn"><a href="./goalie.html">Goalie</a></button>
+          </div>
+        </div>
+        <div class="container">
+          <img src="./assets/images/at.jpg" alt="Avatar" class="image" />
+          <div class="middle">
+            <button id="drillbtn"><a href="./attack.html">Attack</a></button>
+          </div>
+        </div>
+        <div class="container">
+          <img src="./assets/images/def.jpg" alt="Avatar" class="image" />
+          <div class="middle">
+            <button id="drillbtn"><a href="./defence.html">Defence</a></button>
+          </div>
+        </div>
+        <div class="container">
+          <img src="./assets/images/work.jpg" alt="Avatar" class="image" />
+          <div class="middle">
+            <button id="drillbtn">
+              <a href="./workouts.html">Workouts</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="contact-container">
+        <div class="contact-card">
+          <h1 class="head">Contact Form</h1>
+
+          <form
+            id="contact-form"
+            method="POST"
+            action="https://formspree.io/f/xaylrglv"
+          >
+            <p>
+              Name
+              <input
+                type="text"
+                name="name"
+                id="fname"
+                placeholder="name"
+                required
+              />
+            </p>
+
+            <p>
+              Email
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="email"
+                required
+              />
+            </p>
+
+            <p class="full">
+              Message
+              <textarea
+                name="message"
+                id="message"
+                placeholder="message"
+              ></textarea>
+            </p>
+            <p class="full">
+              <input type="submit" name="send" id="send" value="send" />
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>&copy Alex Sassman</footer>
+    <script src="./assets/script/admin.js"></script>
+    <script src="./assets/script/navigation.js"></script>
+    <script src="./assets/script/profile.js"></script>
+  </body>
+</html>
